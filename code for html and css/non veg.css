@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff6666;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #ff6666;
+}
+
+ul {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.foodItem {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.foodItem img {
+    transition: transform 0.3s;
+}
+
+.foodItem:hover img {
+    transform: scale(1.1); /* Scale up on hover */
+    border: 1px solid #ff6666; /* Change border color on hover */
+}
+
+.foodItem:hover {
+    background-color: #ffe6e6; /* Change background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

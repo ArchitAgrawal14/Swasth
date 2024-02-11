@@ -1,0 +1,76 @@
+body {
+    font-family: 'Franklin Gothic Medium', '
+    Arial Narrow',
+     Arial, sans-serif, sans-serif;
+    background-color: #6fafd2;
+    color: #031139;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(183, 160, 160);
+    color: #020e05;
+    text-align: center;
+    padding: 20px;
+}
+
+h1:hover {
+    color: #3611f0;
+    transition: color 0.3s;
+}
+
+section {
+    margin: 20px;
+}
+
+h2, h3 {
+    color: #060202;
+    transition: color 0.3s;
+}
+
+h2:hover, h3:hover {
+    color: #141658;
+}
+
+.Poses{
+    border-radius: 10px;
+}
+
+.exercise {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exercise:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: #a7a915;
+}
+
+.exercise img {
+    width:40%;
+    max-height: 40%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.exercise p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
