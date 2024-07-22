@@ -1,0 +1,105 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to right, black , black);
+    
+}
+nav{
+    background-image: linear-gradient(to right, yellow , blue);
+    height: 80px;
+    width: 100%;
+
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+}
+a.Home , a:hover{
+    background-color:cornflowerblue;
+    transition: .4s;
+    border-radius: 8px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/* yaha se header ke niche wale ka hai */
+.introduction{
+    height: 350px;
+    background-color: black;
+    margin-top: 1px;
+}
+.yoga_2Pose{
+    position: relative;
+    float: right;
+    height: 350px;
+}
+.introductionText{
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    opacity: 60%;
+}
+/* yaha pe grid ka hai vaccines wagera wale. */
+.Grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 225px  ;
+    column-gap: 30px;
+    row-gap: 100px;
+    margin-top: 30px;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+.Grid-items{
+    height: 225px;
+}
+.function_text{
+    color: white;
+}
+.functions-image{
+    height: 225px;
+    border-radius: 8px;
+    border: 3px solid black;
+    width:350px;
+}
+.functions-image:hover{
+    background-color: #363333;
+    border-color: blue;
+    transition: 1s;
+}

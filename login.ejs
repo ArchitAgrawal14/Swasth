@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/responsiveness.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="Left_Container">
+        <form action="/Login" method="post" class="Form_Responsiveness Form_Style">
+            <h2 id="Login_Text">Login</h2>
+            <label for="Email" aria-placeholder="Email" class="Email_Text Text_responsiveness">Email</label>
+            <input type="text" name="Email" required class="Email_Box" placeholder="Email">
+            <label for="Password" class="Password_Text Text_responsiveness">Password</label>
+            <input type="text" name="Password" required class="Password_Box" placeholder="Password">
+            <input type="submit" value="Login" class="SignIn_Login_button">   
+            <a href="SignUp.html" class="SignUp_Link">SignUp</a>
+        </form>
+        <!-- <p class="Below_SignInText">OR</p> -->
+        <!-- <div class="SignIn_Using_Apps">
+            <div><a href=""><img src="icons/Google logo.png" alt="Login using Google" class="App_signIn"></a></div>
+            <div><a href=""><img src="icons/insta logo.jpg" alt="Login using Instagram" class="App_signIn"></a></div>
+            <div><a href=""><img src="icons/facebook logo.png" alt="Login using facebook" class="App_signIn"></a></div>
+            <div><a href=""><img src="icons/X logo.jpg" alt="Login using Instagram" class="App_signIn"></a></div>
+            </div> -->
+    
+    </div>
+
+<div class="Right_Container">
+    <form action="/SignUp" class="Form_StyleForSignUp Form_Responsiveness" method="post">
+        <h2 class="SignUp_Text">SignUp</h2>
+        <label for="FullName" aria-placeholder="FullName" class="FullName_Text" id="SignUp_Texts">Full Name</label>
+        <input type="text" name="FullName" class="FullName_Box SignUp_Boxes" placeholder="FullName" required>
+
+        <label for="SignUp_Email" aria-placeholder="SignUp_Email" class="SignUp_Email_Text" id="SignUp_Texts">Email</label>
+        <input type="text" name="SignUp_Email" class="SignUp_Email_Box SignUp_Boxes" placeholder="Email" required>
+
+        <label for="SignUp_Password" aria-placeholder="SignUp_Password" class="SignUp_Password_Text" id="SignUp_Texts">Password</label>
+        <input type="text" name="SignUp_Password" class="SignUp_Password_Box SignUp_Boxes" placeholder="Password" required>
+
+        <label for="Mobile_number" aria-placeholder="Mobile_number" class="Mobile_number_Text" id="SignUp_Texts">Mobile Number</label>
+        <input type="number" name="Mobile_number" class="Mobile_number_Box SignUp_Boxes" placeholder="Mobile_number" required>
+        <input type="submit" class="SignUp_Login_button" value="SignUp">
+    </form>   
+</div>
+
+
+</body>
+</html>

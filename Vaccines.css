@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+form{
+    position: relative;
+}
+.Search_input{
+    width: 80%;
+    height: 25px;    
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 19px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px 3px gray;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+.Search_input:focus{
+    outline: none;
+}
+.Search_input:hover{
+    border: 2px solid lightblue;
+    transition: 300ms;
+}
+.fa-search{
+    position: absolute;
+    top: 47%;
+    right: 12%;
+    cursor: pointer;
+}
+.fa-search:hover{
+    color: blue;
+}
+.Cards_For_Vaccines{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+}
+.Vaccines_card{
+    display:inline-flex;
+    grid-template-columns: 25% 25% 25%;
+    border: 3px solid lightblue;
+    margin: 3% 7% ;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+}
+.Vaccines_conatiner{
+    z-index: 99;
+    position: relative;
+}
+.Vaccines_card::after{
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    height: 500px;
+    width: 200px;
+    background-color:lightcyan;
+    animation: card_decoration 15s infinite;
+}
+@keyframes card_decoration {
+    100%{
+        transform: translate(-50%,-50%) rotate(400deg);
+        
+    }
+}
+.Vaccines_card:hover{
+    border-color: lightgreen;
+    transition: 200ms;
+}
+.Vaccines_image{
+    border-radius: 8px;
+    width: 220px;
+}
+.Vaccine_details{
+    margin: 10px 10px 20px 0px;
+}
+li{
+    list-style: none;
+    margin: 0%;
+    word-wrap:break-word;
+}
+.Vaccines_card_Buttons{
+    display: grid;
+    gap: 6px;
+    margin: 0px 10px 5px 10px;
+    justify-content: center;
+}
+.Link_Button{
+    border: 1px solid green;
+    border-radius: 8px;
+}
+.Link_Button:hover{
+    cursor: pointer;
+    transition: 200ms;
+    border-color: lightblue;
+}

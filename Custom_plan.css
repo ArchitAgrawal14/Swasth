@@ -1,0 +1,68 @@
+body{
+background-image: url(/images/Space-background.jpeg);
+height: 100%;
+width: 100%;
+}
+.Custom_plan_Theory{
+    border: 1px solid white;
+    padding: 40px;
+}
+.Custom_plan_Theory_Text{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.Custom_plan_inputs{
+    display: grid;
+    color: white;
+    grid-template-columns: 250px;
+    margin: 1% 25% 7% 20%;  /*Top,right,bottom,left*/
+    padding-bottom: 150px;
+    padding-top: 1px;
+    padding-left: 80px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+}
+input{
+    width: 300px;
+}
+.customPlan-input{
+    margin: 4px;
+    outline: none;
+    border-color: lightblue;
+    border-radius: 8px;
+    
+}
+.customPlan-input:hover{
+    border-color: greenyellow;
+    
+}
+
+/* for custom_plan1 */
+.Vata_pitta{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Nature_question{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 150px 150px;
+    margin-bottom:20px ;
+}
+.label_text{
+    color: aliceblue;
+}
+select{
+    height: 30px;
+    margin: 10px;
+}
+select:hover{
+    border: 2px solid greenyellow;
+    transition: .2s;
+    border-radius: 8px;
+}

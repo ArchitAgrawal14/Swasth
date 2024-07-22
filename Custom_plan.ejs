@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsiveness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/Custom_plan.css">
+    <title>Custom Plan</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Swasth</label>
+            <ul>
+                <li>
+                    <a href="/" class="Home">Home</a>
+                </li>
+                <li>
+                    <a href="/ayurveda">Ayurveda</a>
+                </li>
+                <li>
+                    <a href="/vaccines">Vaccines</a>
+                </li>
+                <li>
+                    <a href="/custom_plan">Custom Plan</a>
+                </li>
+
+            </ul>
+    </nav>
+
+        <div class="Custom_plan_Theory introduction">
+            <p class="introductionText Custom_plan_Theory_Text">In Ayurveda the routine is as per according to nature of your body.There are 3 types of dosha Vata,pitta & Kapha keeping them balanced is crucial for a happy and fulfilling life. At our website, we offer custom routine plans designed using the principles of Ayurveda to help you achieve balance and well-being. Our tailored plans consider your unique needs and lifestyle, promoting natural healing and vitality. Visit us to discover how Ayurveda can transform your health journey I use time-tested Ayurvedic practices to create routines that support your body's natural rhythms. By integrating diet, exercise, and mindfulness, I help you achieve optimal health. Start your personalized wellness journey with me today.!</p>
+         </div>  
+    </div>
+    <div class="Custom_plan_inputs">
+        <form action="/customPlan" method="post" class="Form_Responsiveness Form_Style">
+            <h2 id="Ayurveda_Plan">Ayurveda Plan</h2>
+
+            <label for="Weight" aria-placeholder="Weight" class="Weight_Text Text_responsiveness">Weight</label>
+            <input type="number" name="Weight_in_Kg" required class="Weight_Box customPlan-input" placeholder="Weight">
+
+            <label for="Height" class="Height_Text Text_responsiveness">Height</label>
+            <input type="number" name="Height_in_cm" required class="Height_Box customPlan-input" placeholder="Height">
+
+            <label for="Disease" aria-placeholder="Disease" class="Disease_Text" id="Disease_Texts">Disease</label>
+            <input type="text" name="Disease"  class="Disease_Box customPlan-input" placeholder="Disease If any..">
+
+            <input type="submit" value="Next Step" class="Plan_Submit_button customPlan-input">
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .pdf-container {
+            width: 8.5in; /* Standard letter size */
+            min-height: 11in; /* Standard letter size */
+            margin: auto;
+            background-color: #fff;
+            padding: 1in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 20px solid transparent; /* Transparent border for spacing */
+            border-image: url('/images/wave-pattern.jpg') 30 round; /* Wave pattern border */
+            animation: fade-in 0.5s ease-in-out;
+        }
+        @keyframes fade-in {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        h1, h2, h3, h4, p {
+            margin: 0 0 15px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        h2 {
+            font-size: 20px;
+            color: black;
+        }
+        h3 {
+            font-size: 18px;
+            color: black;
+        }
+        h4 {
+            font-size: 16px;
+            color: black;
+        }
+        p {
+            color: black;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            animation: slide-up 0.5s ease-in-out;
+        }
+        @keyframes slide-up {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="pdf-container">
+        <% if (dosha_data && dosha_data.length) { %>
+            <h1>Your Personalized Custom Plan</h1>
+            <h2><%= dosha_data[0] %></h2>
+            <h3>Dosha info:</h3>
+
+            <h4>Physical Symptoms</h4>
+            <p><%= dosha_data[1] %></p>
+            <p><%= dosha_data[2] %></p>
+            <p><%= dosha_data[3] %></p>
+            <p><%= dosha_data[4] %></p>
+            <p><%= dosha_data[5] %></p>
+
+            <h4>Mental Symptoms</h4>
+            <p><%= dosha_data[6] %></p>
+            <p><%= dosha_data[7] %></p>
+            <p><%= dosha_data[8] %></p>
+
+            <h4>Emotional Symptoms</h4>
+            <p><%= dosha_data[9] %></p>
+            <p><%= dosha_data[10] %></p>
+            <p><%= dosha_data[11] %></p>
+
+            <h4>Behavioral Symptoms</h4>
+            <p><%= dosha_data[12] %></p>
+            <p><%= dosha_data[13] %></p>
+            <p><%= dosha_data[14] %></p>
+
+            <h2>Plan to balance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food to Eat</th>
+                        <th>Food to Avoid</th>
+                        <th>Yoga Asanas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><%= dosha_data[16] %></td>
+                        <td><%= dosha_data[17] %></td>
+                        <td><%= dosha_data[18] %></td>
+                    </tr>
+                </tbody>
+            </table>
+        <% } else { %>
+            <h1>Couldn't fetch data</h1>
+        <% } %>
+    </div>
+</body>
+</html>

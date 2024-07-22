@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsiveness.css">
+    <link rel="stylesheet" href="./styles/Doctors.css">
+    <title>Doctors</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Swasth</label>
+            <ul>
+                <li>
+                    <a href="/" class="Home">Home</a>
+                </li>
+                <li>
+                    <a href="/ayurveda">Ayurveda</a>
+                </li>
+                <li>
+                    <a href="/vaccines">Vaccines</a>
+                </li>
+                <li>
+                    <a href="/custom_plan">Custom Plan</a>
+                </li>
+
+            </ul>
+    </nav>
+
+    <div class="doctor_image">
+        <img src="/images/ginger-transformed.jpeg" alt="" class="Image_Doc">
+        <img src="/images/Carrom_Seeds-transformed.jpeg" alt="" class="Image_Doc" width="440px">
+        <img src="/images/Curcumin-transformed.jpeg" alt="" class="Image_Doc">
+    </div>
+    <!-- For table -->
+    <section class="Home-section">
+        <main class="table" id="products_table">
+            <section class="table__header">
+                <h1>Ayurveda</h1>
+                <div class="input-group">
+                    <input type="search" placeholder="Search Data...">
+                    <img src="images/search icon.jpg" alt="searchIcon">
+                </div>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Disease <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Herbs <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> How to use it <span class="icon-arrow">&UpArrow;</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%if(Ayur_data && Ayur_data.length){%>
+                            <% Ayur_data.forEach((ayurveda) => { %>
+                                <tr>
+                                    <td><%= ayurveda.disease %></td>
+                                    <td class="status hospital"><%= ayurveda.herbs %> </td>
+                                    <td><p class="status"><%= ayurveda.how_to_use_it %></p></td>
+                                </tr>
+                            <% }); %>
+                    <%}else{%>
+                        <tr>    
+                            <td><img src="/images/Almonds.jpeg" alt=""> "Could'nt fetch data" </td>
+                            <td>"Could'nt fetch data" </td>
+                            <td>
+                                <p class="status Automation">"Could'nt fetch data" </p>
+                            </td>
+                            <td class="status tags_text"> "Could'nt fetch data" </td>
+                            <td> <strong class="status Finished"> "Could'nt fetch data" </strong> </td>
+                        </tr>
+                        <%}%>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </section>
+      
+    <script>
+        // 1. Searching for specific data of HTML table
+const search = document.querySelector('.input-group input'),
+    table_rows = document.querySelectorAll('tbody tr'),
+    table_headings = document.querySelectorAll('thead th');
+
+search.addEventListener('input', searchTable);
+
+function searchTable() {
+    table_rows.forEach((row, i) => {
+        let table_data = row.textContent.toLowerCase(),
+            search_data = search.value.toLowerCase();
+
+        row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+        row.style.setProperty('--delay', i / 25 + 's');
+    })
+
+    document.querySelectorAll('tbody tr:not(.hide)').forEach((visible_row, i) => {
+        visible_row.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
+    });
+}
+
+// 2. Sorting | Ordering data of HTML table
+
+table_headings.forEach((head, i) => {
+    let sort_asc = true;
+    head.onclick = () => {
+        table_headings.forEach(head => head.classList.remove('active'));
+        head.classList.add('active');
+
+        document.querySelectorAll('td').forEach(td => td.classList.remove('active'));
+        table_rows.forEach(row => {
+            row.querySelectorAll('td')[i].classList.add('active');
+        })
+
+        head.classList.toggle('asc', sort_asc);
+        sort_asc = head.classList.contains('asc') ? false : true;
+
+        sortTable(i, sort_asc);
+    }
+})
+
+
+function sortTable(column, sort_asc) {
+    [...table_rows].sort((a, b) => {
+        let first_row = a.querySelectorAll('td')[column].textContent.toLowerCase(),
+            second_row = b.querySelectorAll('td')[column].textContent.toLowerCase();
+
+        return sort_asc ? (first_row < second_row ? 1 : -1) : (first_row < second_row ? -1 : 1);
+    })
+        .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
+}
+    </script>
+</body>
+</html>

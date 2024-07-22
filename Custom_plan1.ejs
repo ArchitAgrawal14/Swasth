@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsiveness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/Custom_plan.css">
+    <title>Custom Plan</title>
+</head>
+<body>
+        <div class="Custom_plan_Theory introduction">
+            <p class="introductionText Custom_plan_Theory_Text">There will be a total of 15 necessary question to classify 10 of those question will be of physical attribute and 5 will be Emotional & mental characterstics.
+            According to Ayurveda our body is made up of 5 elements,That are Vayu(6%),Jal(72%),Agni(4%),Prithvi(12%),Aakash(8%),Knowing your body type is necessary to classify According to Ayurveda ,The balance of these is very important as it can cause disease in our body , The combination of these elements determines once prakruti.! </p>
+         </div>  
+        <div class="Nature_question">
+         <form action="/vataPittaKapha" id="customPlanForm" method="post">
+            <label for="body_frame" class="label_text">Body frame:</label>
+            <select name="body_frame" id="vataPitaKaphaOptions" required>
+                <option value="1">Thin, bony and small framed. Hardly gains weight</option>
+                <option value="2">Medium built. Can gain and lose weight easily</option>
+                <option value="3">Large built. Gain weight easily but difficult to lose</option>
+           </select>
+
+           <label for="walk_talk" class="label_text">Walk & Talk</label>
+            <select name="walk_talk" id="vataPitaKaphaOptions" required>
+                <option value="1">Fast walk and talk</option>
+                <option value="2">Moderate and determined walk</option>
+                <option value="3">Slow and steady walk</option>
+            </select>
+
+            <label for="weather_reaction" class="label_text">Weather Reaction</label>
+            <select name="weather_reaction" id="vataPitaKaphaOptions" required>
+                <option value="1">Enjoy warm climate but feel uncomfortable in cool weather</option>
+                <option value="2">Enjoy cool weather but dislikes warm</option>
+                <option value="3">Comfortable for most of the year but prefer summer and spring.Don't like damp climate</option>
+            </select>
+
+            <label for="sweating" class="label_text">Sweating</label>
+            <select name="sweating" id="vataPitaKaphaOptions" required>
+                <option value="1">Sweat little but not much .Have minimal body odour</option>
+                <option value="2">Sweat alot have medium body odour</option>
+                <option value="3">Sweat moderately but sweat a lot when working hard have strong odour </option>
+            </select>
+
+            <label for="appetite" class="label_text">Appetite</label>
+            <select name="appetite" id="vataPitaKaphaOptions" required>
+                <option value="1">Irregular sometimes I feel hungry somtimes I don't</option>
+                <option value="2">Strong and Sharp. always feels hungry</option>
+                <option value="3">Decent appteite. Have tendency to eat for comfort and taste</option>
+            </select>
+
+            <label for="skin" class="label_text">Skin</label>
+            <select name="skin" id="vataPitaKaphaOptions" required>
+                <option value="1">Normal to dry,rough,thin and cool ,Skin issues like dryness,dullness and wrinkly </option>
+                <option value="2">Normal to oily,soft,reddish,sensitive and warm. Skin issues like inflamation</option>
+                <option value="3">Normal to oily,soft,thick and cool. Skin issues like excessive oily,itching,fungal infections </option>
+            </select>
+
+            <label for="hair" class="label_text">Hair</label>
+            <select name="hair" id="vataPitaKaphaOptions" required>
+                <option value="1">Rough,dry and wavy. It gets split end easily </option>
+                <option value="2">Normal,straight,thin and brownish</option>
+                <option value="3">Thick,curly and oily, Hair color tends to be on darker side </option>
+            </select>
+
+            <label for="lips_teeth" class="label_text">Lips & Teeth</label>
+            <select name="lips_teeth" id="vataPitaKaphaOptions" required>
+                <option value="1">Habe thin lips that tends to get dry ,Teeth can be somewhat uneven. Teeth may require constant attention </option>
+                <option value="2">Medium sized soft lips. Upper lip slightly darker than lower lip .Teeth are medium sized but it tend to suffer cavities. </option>
+                <option value="3">Large and smooth lips.Teeth are well formed and aligned and require less care in general</option>
+            </select>
+
+            <label for="eyes" class="label_text">Eyes</label>
+            <select name="eyes" id="vataPitaKaphaOptions" required>
+                <option value="1">Small size and feels dry and sleepy often. I blink a lot</option>
+                <option value="2">Medium in size. I often get reddish eyes </option>
+                <option value="3">Big and effective .I Have thick eyes lashes </option>
+            </select>
+
+            <label for="general_signs" class="label_text">General signs</label>
+            <select name="general_signs" id="vataPitaKaphaOptions" required>
+                <option value="1">Cracking signs in joints,Small forehead,Nails crack easily </option>
+                <option value="2">Black moles on body,Medium forehead,Nails are pink and soft </option>
+                <option value="3">Disproportionate body like heavy thighs etc, Large forehead ,Nails are wide and whitish  </option>
+            </select>
+
+            <label for="memory" class="label_text">Memory</label>
+            <select name="memory" id="vataPitaKaphaOptions" required>
+                <option value="1">Qiuck to learn but quick to forget. Short term memory is good</option>
+                <option value="2">Average speed of learning .But once learnt ,never forgets</option>
+                <option value="3">Slow to learn but remembers for a long time.</option>
+            </select>
+
+            <label for="mind" class="label_text">Mind</label>
+            <select name="mind" id="vataPitaKaphaOptions" required>
+                <option value="1">Mind tends to get relentless easily</option>
+                <option value="2">Ming gets impatient or aggresive easily</option>
+                <option value="3">Mind remain cool and calm Mostly,unruffled</option>
+            </select>
+
+            <label for="mind_actions" class="label_text">Mind on actions</label>
+            <select name="mind_actions" id="vataPitaKaphaOptions" required>
+            <option value="1">OverThinking</option>
+            <option value="2">Quick implementation</option>
+            <option value="3">Lazy implementation.Has a tendency to procrastinate</option>
+            </select>
+
+        <label for="sleep_quality" class="label_text">Sleep quality</label>
+        <select name="sleep_quality" id="vataPitaKaphaOptions" required>
+            <option value="1">Light and disturbed sleep .I wake up easily in the morning</option>
+            <option value="2">Moderate but regular .I can go back to sleep easily</option>
+            <option value="3">Deep and heavy. I can't easily wake up in the morning</option>
+        </select>
+
+        <label for="emotional_nature" class="label_text">Emotional nature</label>
+        <select name="emotional_nature" id="vataPitaKaphaOptions" required>
+                <option value="1">I worry a lot, often feel nervous and anxious</option>
+                <option value="2">I oftem get irritable,angry and impatient</option>
+                <option value="3">Loving and caring.It takes a lot to make me angry</option>
+            </select>
+
+            <input type="submit" value="Finish" class="Plan_Submit_button customPlan-input">
+        
+        </form>
+    </div>
+         <div class="Vata_pitta">
+            <img src="/images/Vata_pitta-transformed.png" alt="" height="300px" width="50%">
+            <img src="/images/Vata_pitta_kapha-transformed.jpeg" alt="" height="300px" width="50%">
+         </div>
+    </div>

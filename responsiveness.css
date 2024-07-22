@@ -1,0 +1,578 @@
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a:hover ,a.Home{
+            background: none;
+            color: #0082e6;
+        }
+        #check:checked~ul{
+            left: 0;
+        }
+}
+
+@media(min-width:992px){
+    .SwasthLogo{
+    height: 40px;
+    margin: 22px;
+    }
+    .svgIcons{
+        height: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #IconText{
+        font-size:medium;
+    }
+    .three_Vertical_Dots{
+        visibility: hidden;
+    }
+    .yoga_2Pose{
+        float: right;
+        height:350px;
+    }
+    .introductionText{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: x-large;
+        opacity: 60%;
+    }
+}
+@media(min-width:768px) and (max-width:992px){
+    .SwasthLogo{
+        height: 36px;
+        margin: 22px;
+    }
+    .svgIcons{
+        height: 28px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 18px;
+        margin-bottom: 9px;
+    }
+    #IconText{
+            font-size:medium;    
+    }
+    .yoga_2Pose{
+            float: right;
+            height:300px;
+    }
+    .introductionText{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
+            opacity: 60%;
+    }
+    .Grid-container{
+        grid-template-columns: auto auto;
+        grid-template-rows: 225px 225px 225px;
+        }
+}
+
+@media(min-width:600px) and (max-width:768px){
+    .SwasthLogo{
+        height: 30px;
+        margin: 22px;
+    }
+    .svgIcons{
+        height: 26px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+    #IconText{
+        font-size:medium;
+    }
+    .yoga_2Pose{
+            float: right;
+            height:250px;
+    }
+    .introductionText{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            opacity: 60%;
+    }
+    .First_Three_Functions{
+        display: inline-block;
+    }
+    
+    .Second_Three_Functions{
+        display: inline-block;
+    }
+    .Grid-container{
+        grid-template-columns: auto auto ;
+        grid-template-rows: 225px 225px 225px;
+    }
+}
+
+@media(max-width:600px){
+    .SwasthLogo{
+        height: 28px;
+        margin:22px;
+    }
+    
+    .First_Three_Functions{
+        display: inline-block;
+    }
+    .Second_Three_Functions{
+        display: inline-block;
+    }
+    .Grid-container{
+        grid-template-columns: auto ;
+        grid-template-rows: 225px ;
+    }
+}
+@media(min-width:360px) and (max-width:600px){
+    .svgIcons{
+        height: 21px;
+        margin-left: 22px;
+        margin-right: 22px;
+        margin-top: 14px;
+        margin-bottom: 6px;
+    }
+    #IconText{
+        font-size:medium;
+    }
+    .yoga_2Pose{
+        float: right;
+        height:200px;
+    }
+    .introductionText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    opacity: 60%;
+    }
+    .Grid-container{
+        grid-template-columns: auto ;
+        grid-template-rows: 225px ;
+    }
+}
+@media(max-width:360px){
+    .svgIcons{
+    visibility: hidden;   
+    }
+    .yoga_2Pose{
+        float: right;
+        height: 150px;
+    }
+    #IconText{
+        visibility: hidden;    
+    }
+    .Grid-container{
+        grid-template-columns: auto ;
+        grid-template-rows: 225px ;
+        }
+}
+/* @media(min-width:100px) and (max-width:360px){
+    .svgIcons{
+    font-size: small;
+    visibility: hidden;
+    }
+}
+
+@media(max-width:100px){
+    #IconText{
+        font-size: small;
+    }
+} */
+/* yaha se icon text ka responsiveness chalu hai */
+
+
+/* @media(min-width:100px) and (max-width:360px){
+    #IconText{
+    font-size: small;
+    visibility: hidden;
+    }
+}
+
+@media(max-width:99px){
+    #IconText{
+        font-size: small;
+    }
+} */
+/* yaha se yoga 2 pose ka responsiveness hai */
+
+/* yaha se introduction text (yoga2 wala pose ke bagal wala text) ka responsiveness hai */
+
+@media(min-width:100px) and (max-width:360px){
+    .introductionText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-small;
+    opacity: 60%;
+    }
+    .Grid-container{
+        grid-template-columns: auto ;
+        grid-template-rows: 225px ;
+        }
+}
+@media(max-width:100px){
+    .introductionText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-small;
+    opacity: 60%;
+    }
+    .Grid-container{
+    grid-template-columns: auto ;
+    grid-template-rows: 225px ;
+    }
+    
+}
+
+/* yaha se login page ke hai. */
+
+@media(min-width:992px){
+    .Form_Responsiveness{
+        margin-top:130px ;
+        margin-left: 118px;
+        margin-right: 118px;
+    }
+    .SignIn_Login_button{
+        padding-left: 100px;
+        padding-right:100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+        width: 400px;
+
+    }
+    .Password_Box{
+        width: 400px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+    }
+    .Email_Box{
+        width: 400px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+    }
+    .SignUp_Link{
+        visibility: hidden;
+    }
+    .App_signIn{
+        margin: 20px;
+        height:40px ;
+        width:40px;
+    }
+    .SignUp_Boxes{
+        width: 400px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+    }
+    .SignUp_Login_button{
+        padding-left: 100px;
+        padding-right:100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 25px;
+        width: 400px;
+
+    }
+
+}
+@media(min-width:768px) and (max-width:992px){
+    .Form_Responsiveness{
+        margin-top:130px ;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .SignUp_Login_button{
+        padding-left: 85px;
+        padding-right: 85px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        margin-right: 22px;
+        width: 330px;
+        
+    }
+    .SignIn_Login_button{
+        padding-left: 85px;
+        padding-right: 85px;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        margin-right: 22px;
+        width: 330px;
+        
+    }
+    .Password_Box{
+        margin-bottom: 22px;
+        margin-right: 22px;
+        width: 330px;
+    }
+    .Email_Box{
+        margin-bottom: 22px;
+        margin-right: 22px;
+        width: 330px;
+    }
+    .App_signIn{
+        margin: 17px;
+        height: 37px ;
+        width: 37px;
+    }
+    .SignUp_Link{
+        visibility: hidden;
+    }
+    .SignUp_Boxes{
+        margin-bottom: 22px;
+        margin-right: 22px;
+        width: 330px;
+    }
+}
+
+@media(min-width:600px) and (max-width:768px){
+    .Form_Responsiveness{
+        margin-top:130px ;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .SignUp_Boxes{
+        margin-bottom: 19px;
+        margin-right: 19px;
+        width: 260px;
+    }
+    .SignUp_Login_button{
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-top: 19px;
+        margin-bottom: 19px;
+        margin-right: 19px;
+        width: 260px;
+        
+    }
+    .SignIn_Login_button{
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-top: 19px;
+        margin-bottom: 19px;
+        margin-right: 19px;
+        width: 260px;
+        
+    }
+    .App_signIn{
+        margin: 14px;
+        height: 34px ;
+        width: 34px;
+    }
+    .SignUp_Link{
+        visibility: hidden;
+    }
+    .Email_Box{
+        margin-bottom: 19px;
+        margin-right: 19px;
+        width: 260px;
+    }
+    .Password_Box{
+        margin-bottom: 19px;
+        margin-right: 19px;
+        width: 260px;
+    }
+}
+@media(min-width:360px) and (max-width:600px){
+    .Form_Responsiveness{
+        margin-top:130px ;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .SignUp_Login_button{
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 160px;
+        
+    }
+    .SignUp_Boxes{
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 140px;
+    }
+    .App_signIn{
+        margin: 11px;
+        height: 31px ;
+        width: 31px;
+    }
+    .SignUp_Link{
+        visibility: hidden;
+    }
+    .Email_Box{
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 160px;
+    }
+    .Password_Box{
+        margin-bottom: 19px;
+        margin-right: 19px;
+        width: 260px;
+    }
+    .SignIn_Login_button{
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 160px;
+        
+    }
+}
+@media(min-width:100px) and (max-width:360px){
+    .Form_Responsiveness{
+        margin-top:130px ;
+        margin-left: 0px;
+        margin-right: 6%;
+    }
+    .SignIn_Login_button{
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 160px;
+        margin-left: 50%;
+        
+    }
+    .Email_Box{
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 160px;
+        margin-left: 50%;
+    }
+    .Password_Box{
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 160px;
+        margin-left: 50%;
+    }
+    .Below_SignInText{
+        margin-left: 100%;
+    }
+    #Login_Text{
+        margin-left: 50%;
+    }
+    .Text_responsiveness{
+        margin-left: 50%;
+    }
+    .Right_Container{
+        visibility: hidden;
+    }
+    .App_signIn{
+        margin: 11px;
+        height: 31px ;
+        width: 31px;
+    }
+    .SignUp_Link{
+        margin-left: 90%;
+    }
+    .SignIn_Using_Apps{
+        margin-left: 100%;
+    }
+    .SignUp_Login_button{
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 200px;
+    }
+    .SignUp_Boxes{
+        padding-left: 5px;
+        padding-right: 55px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 140px;
+    }
+}
+
+@media(max-width:100px){
+    .Form_Responsiveness{
+        margin-top:130px ;
+        margin-left: 0px;
+        margin-right: 4%;
+    }
+    .SignIn_Login_button{
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 50px;
+        margin-left: 50%;
+    }
+    .Password_Box{
+        margin-bottom: 13px;
+        margin-right: 13px;
+        width: 140px;
+        margin-left: 50%;
+    }
+    .Email_Box{
+        margin-bottom: 13px;
+        margin-right: 13px;
+        width: 140px;
+        margin-left: 50%;
+    }
+    .Text_responsiveness{
+        margin-left: 50%;
+    }
+    #Login_Text{
+        margin-left: 50%;
+    }
+    .SignUp_Login_button{
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 180px;
+    }
+    .SignUp_Boxes{
+        padding-left: 5px;
+        padding-right: 55px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        width: 140px;
+    }
+    .Right_Container{
+        visibility: hidden;
+    }
+    .SignUp_Link{
+        margin-left: 100%;
+    }
+    .SignIn_Using_Apps{
+        margin-left: 110%;
+    }
+    .Below_SignInText{
+        margin-left: 110%;
+    }
+
+}

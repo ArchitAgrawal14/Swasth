@@ -1,0 +1,135 @@
+.Left_Container{
+    height: 100%;
+    width: 50%;
+    background-color:white;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.Form_Style{
+    margin-top:130px ;
+    margin-left: 118px;
+    margin-right: 118px;
+}
+.SignIn_Using_Apps{
+    display: flex;
+    justify-content: center;
+}
+.Below_SignInText{
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+.App_signIn{
+    margin: 20px;
+    height:40px ;
+    width:40px;
+}
+.Email_Text{
+   font-weight: bold;
+}
+/* yaha niche attribute with a specific value(Email) selector use hua hai iska format aesa hota hai ([attribute|="value"]) */
+[value|="Email"]{
+    color:grey;
+}
+.Email_Box{
+    height: 25px;
+    width: 400px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border: 2px solid whitesmoke;
+}
+.Password_Text{
+    font-weight: bold;
+}
+/* yaha niche attribute with a specific value(Password) selector use hua hai iska format aesa hota hai ([attribute|="value"]) */
+[value|="Password"]{
+    color: grey;
+}
+.Password_Box{
+    height: 25px;
+    border-radius: 15px;
+    width: 400px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border: 2px solid whitesmoke;
+
+}
+.SignIn_Login_button{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation:both 8s ease infinite;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+.SignIn_Login_button:hover{
+    border-color: black;
+}
+.SignUp_Link{
+    margin-left: 43%;
+    text-decoration: none;
+}
+/* yaha se right container ka chalu hai */
+.Right_Container{
+    position: absolute;
+    height: auto;
+    width: 50%;
+    background-color:black;
+    color: white;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+.Form_StyleForSignUp{
+    margin-top:100px ;
+    margin-left: 120px;
+    margin-right: 100px;
+}
+.SignUp_Boxes{
+    height: 25px;
+    width: 400px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border: 2px solid whitesmoke;
+    margin-left:10px ;
+}
+.SignUp_Boxes:hover{
+    border-color: #ff4c68;
+}
+#SignUp_Texts{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.SignUp_Login_button{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation:both 8s ease infinite;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    width: 400px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    border-color: black;
+}
+.SignUp_Login_button:hover{
+    border-color: white;
+}
